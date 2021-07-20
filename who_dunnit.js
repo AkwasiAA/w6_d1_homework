@@ -61,7 +61,7 @@
 // console.log(suspects);
 // console.log(`Suspect three is ${suspectThree}.`);
 
-// First 3 suspects are set using global variable but can be reassigned. In new const variable suspect 3 was reassigned but could only be called inside the block/function
+// First 3 suspects are set using global variable but can be reassigned. In new const variable suspect 3 could only be called inside the block/function. The two suspect 3's are not related the block of code uses the suspect it was given within the block.
 
 // // Episode 5
 // const scenario = {
@@ -105,7 +105,7 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// Plot twist function is an inner function which uses the arguments and variable of the outer function.
+// Plot twist function is an inner function within the change murderer function which uses the arguments and variable of the outer function. Murderer can be reassigned as they all don't have let or const in front of them whatever comes later takes precedence
 
 // // Episode 7
 // let murderer = 'Professor Plum';
@@ -134,7 +134,7 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// Reverts to the global variable due to the let keyword being used in the plot twist function. Would only be accesible if called with the enclosing block
+// Reverts to the const variable above due to the let keyword being used in the plot twist function. Would only be accesible if called with the enclosing block
 
 // // Episode 8
 // const scenario = {
@@ -172,6 +172,8 @@
 // const verdict = declareWeapon();
 // console.log(verdict);
 
+// Room was changed to dining room. If the room is equal to dining room, change the murderer to Colonel, if the murderer is equal to colonel mustard change the weapon to candlestick. Called function below solidify this.
+
 // // Episode 9
 // let murderer = 'Professor Plum';
 
@@ -186,4 +188,4 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// Murderer not defined properly within block so does not call this function, reverts to global variable
+// Murderer not defined properly within block so does not call this function, reverts to global variable. let murderer makes it a new variable.
